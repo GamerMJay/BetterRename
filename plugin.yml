@@ -1,0 +1,11 @@
+name: BetterRename
+main: GamerMJay\BetterRename\Main
+author: GamerMJay2008
+api: 4.0.0
+description: Easy Rename plugin
+version: 1.0.0
+website: https://github.com/GamerMJay2008/BetterRename
+
+permissions:
+  rename.use:
+    default: op
