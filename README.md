@@ -3,8 +3,8 @@
 
 ### Report Bug
 You've found a Bug?
-- Go to [Issues](https://github.com/GamerMJay2008/BetterGM/issues)
-- Click on [New Issue](https://github.com/GamerMJay2008/BetterGM/issues/new/choose)
+- Go to [Issues](https://github.com/GamerMJay2008/BetterRename/issues)
+- Click on [New Issue](https://github.com/GamerMJay2008/BetterRename/issues/new/choose)
 - Write your bug with all Informations that you have down
 
 ### Commands
