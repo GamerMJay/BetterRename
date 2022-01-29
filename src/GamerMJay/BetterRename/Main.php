@@ -21,15 +21,15 @@ class Main extends PluginBase
             case "rename":
                 $cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
                 if(!$sender instanceof Player){
-                    $sender->sendMessage($cfg->get("run-ingame"));
+                    $sender->sendMessage($config->get("run-ingame"));
                     return false;
                 }
                 if(!$sender->hasPermission("rename.use")){
-                    $sender->sendMessage($cfg->get("no-permission"));
+                    $sender->sendMessage($config->get("no-permission"));
                     return false;
                 }
                 if(!isset($args[0])){
-                    $sender->sendMessage($cfg->get("rename-usage"));
+                    $sender->sendMessage($config->get("rename-usage"));
                     return false;
                 }
                 if(isset($args[0])){
@@ -37,7 +37,7 @@ class Main extends PluginBase
                     $item = $sender->getInventory()->getItemInHand();
                     $item->setCustomName($name);
                     $sender->getInventory()->setItemInHand($item);;
-                    $msg = str_replace("{name}", $name, $cfg->get("rename-succes"));
+                    $msg = str_replace("{name}", $name, $config->get("rename-succes"));
                     $sender->sendMessage($msg);
                 }
                 break;
