@@ -6,6 +6,11 @@ description: Easy Rename plugin
 version: 1.0.0
 website: https://github.com/GamerMJay/BetterRename
 
+commands:
+ rename: 
+  description: "rename your item"
+  permission: rename.use
+  
 permissions:
   rename.use:
     default: op
