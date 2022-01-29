@@ -13,7 +13,7 @@ class Main extends PluginBase
     public function onEnable(): void
     {
         $this->saveResource("config.yml");
-        $cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
     }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
     {
