@@ -21,7 +21,7 @@ class Main extends PluginBase
             case "rename":
                 $cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
                 if(!$sender instanceof Player){
-                    $sender->sendMessage($cfg->get("noplayer"));
+                    $sender->sendMessage($cfg->get("run-ingame"));
                     return false;
                 }
                 if(!$sender->hasPermission("rename.use")){
