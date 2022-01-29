@@ -28,6 +28,11 @@ class Main extends PluginBase
                     $sender->sendMessage($config->get("no-permission"));
                     return false;
                 }
+                $item = $sender->getInventory()->getItemInHand();
+                if ($item->isNull()) {
+                    $sender->sendMessage($config->get("rename.noitem"));
+                    return false;
+                }
                 if(!isset($args[0])){
                     $sender->sendMessage($config->get("rename-usage"));
                     return false;
