@@ -19,7 +19,7 @@ class Main extends PluginBase
     {
         switch ($cmd->getName()){
             case "rename":
-                $cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+                $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
                 if(!$sender instanceof Player){
                     $sender->sendMessage($config->get("run-ingame"));
                     return false;
