@@ -2,6 +2,8 @@
 
 
 # Messages
+command: "rename*
+description: "Rename your Item in your Hand"
 no-permission: "§6§lBetterRename §r§8» §cyou have no permission!"
 run-ingame: "§6§lBetterRename §r§8» §crun this command ingame!"
 rename-usage: "§6§lBetterRename §r§8» §cUse /rename <name>"
