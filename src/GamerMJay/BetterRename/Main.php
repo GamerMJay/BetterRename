@@ -10,6 +10,10 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase
 {
+    public function __construct(Main $plugin) {
+		$this->plugin = $plugin;
+		parent::__construct($this->plugin->getConfig()->get("command"), $this->plugin->getConfig()->get("description"), "/rename", [""]);
+	}
     public function onEnable(): void
     {
         $this->saveResource("config.yml");
