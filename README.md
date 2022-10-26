@@ -1,5 +1,5 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# BetterRename - V1.0.0  
+# BetterRename - V1.1.0  
 
 ### Report Bug
 You've found a Bug?
@@ -20,6 +20,6 @@ Owner: GamerMJay (https://github.com/GamerMJay)
 
 Helper: ()
 
-Icon: ()
+Icon: JvstinXz (https://github.com/JvstinZx)
 
 Discord-Tag: `GamerMJay#6158`

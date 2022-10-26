@@ -10,10 +10,20 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase
 {
+
+    private $confversion = "1.0.0";
+
+    public $version = "1.1.0";
+
+    private Config $config;
+
     public function onEnable(): void
     {
         $this->saveResource("config.yml");
-        $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $this->config = new Config($this->getDataFolder()."config.yml", Config::YAML);
+        if(!$this->config->exists("version") || $this->config->get("version") !== $this->confversion){
+            $this->getLogger()->error("Your config has an old version, updating your config to a new one. You might set values");
+        }
     }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
     {
