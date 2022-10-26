@@ -16,10 +16,10 @@ You've found a Bug?
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
 ### Helpers:
-Owner: GamerMJay (https://github.com/GamerMJay)
+[GamerMJay](https://github.com/GamerMJay)
 
 Helper: ()
 
-Icon: JvstinXz (https://github.com/JvstinXz)
+Icon: [JvstinXz](https://github.com/JvstinXz)
 
 Discord-Tag: `GamerMJay#6158`
