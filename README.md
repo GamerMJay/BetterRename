@@ -20,6 +20,6 @@ Owner: GamerMJay (https://github.com/GamerMJay)
 
 Helper: ()
 
-Icon: JvstinXz (https://github.com/JvstinZx)
+Icon: JvstinXz (https://github.com/JvstinXz)
 
 Discord-Tag: `GamerMJay#6158`
