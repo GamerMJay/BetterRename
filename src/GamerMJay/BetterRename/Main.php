@@ -13,7 +13,7 @@ class Main extends PluginBase
 
     private $confversion = "1.0.0";
 
-    public $version = "1.1.0";
+    public $version = "2.0.0";
 
     private Config $config;
 

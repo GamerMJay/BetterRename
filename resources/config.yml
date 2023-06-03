@@ -1,8 +1,8 @@
-# BetterRename V1.1.0 by GamerMJay, licensed under Apache License 2.0!
+# BetterRename V2.0.0 by GamerMJay, licensed under Apache License 2.0!
 
 #Version of the config
 #/!\ Do not edit it /!\
-version: "1.1.0"
+version: "1.0.0"
 
 # Messages
 no-permission: "§6§lBetterRename §r§8» §cyou have no permission!"
