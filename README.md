@@ -21,7 +21,7 @@ This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 ### Helpers:
 [GamerMJay](https://github.com/GamerMJay)
 
-Helper: ()
+Helper: /
 
 Icon: [JvstinXz](https://github.com/JvstinXz)
 
