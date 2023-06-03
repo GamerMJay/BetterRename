@@ -2,7 +2,7 @@
 # BetterRename - V2.0.0  
 
 #### New
-Updated to PM5
+Updated to PocketMine-MP 5
 
 ### Report Bug
 You've found a Bug?
