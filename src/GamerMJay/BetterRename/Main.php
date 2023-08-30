@@ -27,38 +27,32 @@ class Main extends PluginBase
     }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
     {
-        switch ($cmd->getName()){
-            case "rename":
-                $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
-                if(!$sender instanceof Player){
-                    $sender->sendMessage($config->get("run-ingame"));
-                    return false;
-                }
-                if(!$sender->hasPermission("rename.use")){
-                    $sender->sendMessage($config->get("no-permission"));
-                    return false;
-                }
-                $item = $sender->getInventory()->getItemInHand();
-                if ($item->isNull()) {
-                    $sender->sendMessage($config->get("rename.noitem"));
-                    return false;
-                }
-                if(!isset($args[0])){
-                    $sender->sendMessage($config->get("rename-usage"));
-                    return false;
-                }
-                if(isset($args[0])){
-                    $name = $args[0];
-                    $item = $sender->getInventory()->getItemInHand();
-                    $item->setCustomName($name);
-                    $sender->getInventory()->setItemInHand($item);;
-                    $msg = str_replace("{name}", $name, $config->get("rename-succes"));
-                    $sender->sendMessage($msg);
-                }
-                break;
+        if ($cmd->getName() === "rename") {
+            $config = $this->config;
+            if (!$sender instanceof Player) {
+                $sender->sendMessage($config->get("run-ingame"));
+                return false;
+            }
+            if(!$sender->hasPermission("rename.use")){
+                $sender->sendMessage($config->get("no-permission"));
+                return false;
+            }
+            $item = $sender->getInventory()->getItemInHand();
+            if ($item->isNull()) {
+                $sender->sendMessage($config->get("rename.noitem"));
+                return false;
+            }
+            if(!isset($args[0])){
+                $sender->sendMessage($config->get("rename-usage"));
+                return false;
+            }
+            $name = $args[0];
+            $item = $sender->getInventory()->getItemInHand();
+            $item->setCustomName($name);
+            $sender->getInventory()->setItemInHand($item);
+            $sender->sendMessage(str_replace("{name}", $name, $config->get("rename-succes")));
         }
-        return false;
+
+        return true;
     }
-
-
 }
