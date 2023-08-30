@@ -25,4 +25,4 @@ Helper: /
 
 Icon: [JvstinXz](https://github.com/JvstinXz)
 
-Discord-Tag: `GamerMJay#6158`
+Discord-Tag: `GamerMJay`
